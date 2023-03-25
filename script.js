@@ -1,10 +1,10 @@
-//your JS code here. If required.
- function add(){
-	return "hello, world!";
+async function add(){
+	await delay(1000);
+	return "Hello, World!";
 }
-async function ff(){
-	var prom=await add();
-document.getElementById("output").innerHTML=prom;
-	
+function delay(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
 }
-ff();
+add().then(function (value){
+	document.write(value);
+});
