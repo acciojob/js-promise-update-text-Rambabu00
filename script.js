@@ -1,6 +1,6 @@
 async function add(){
 	await delay(1000);
-	return "Hello, World!";
+	return "Hello, world!";
 }
 function delay(time) {
   return new Promise(resolve => setTimeout(resolve, time));
